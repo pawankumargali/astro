@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Confirmation Page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/zerogrid.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/responsive.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/contactform.css" type="text/css" media="all">
+    <link rel="stylesheet" href="css/confirmation.css" type="text/css" media="all">
+    <script src="https://kit.fontawesome.com/84893fe6e5.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="js/jquery-1.6.js"></script>
+    <script type="text/javascript" src="js/cufon-yui.js"></script>
+    <script type="text/javascript" src="js/cufon-replace.js"></script>
+    <script type="text/javascript" src="js/Forum_400.font.js"></script>
+    <script type="text/javascript" src="js/atooltip.jquery.js"></script>
+    <script type="text/javascript" src="js/css3-mediaqueries.js"></script>
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myTopnav");
+            if (x.className === "topnav") {
+                x.className += " responsive";
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+</head>
+
+<body id="page5">
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active" style="font-family: sans-serif;">Home</a>
+            <a href="about.html" style="font-family: sans-serif;">About Us</a>
+            <div class="dropdown">
+                <button class="dropbtn">Services
+                </button>
+                <div class="dropdown-content">
+                    <a href="astrology-services.html" style="font-family: sans-serif;">Astrology Services</a>
+                    <a href="vasthu.html" style="font-family: sans-serif;">Vaastu Services</a>
+                    <a href="priest-services.html" style="font-family: sans-serif;">Priest Services</a>
+                    <a href="priest-services.html" style="font-family: sans-serif;">Virtual Services</a>
+                    <a href="muhurtha.html">Muhurtha Services</a>
+                </div>
+            </div>
+            <!--a href="Services.html">Services</a-->
+            <div class="dropdown">
+                <button class="dropbtn">Classes
+                </button>
+                <div class="dropdown-content">
+                    <a href="vedic_classes.html" style="font-family: sans-serif;">Vedic Classes</a>
+                    <a href="astrology_classes.html" style="font-family: sans-serif;">Astrology Classes</a>
+                    <a href="#" style="font-family: sans-serif;">Vaastu Classes</a>
+                    <!--a href="#">Virtual Services</a-->
+                    <a href="#" style="font-family: sans-serif;">Muhurtha Classes</a>
+                </div>
+            </div>
+            <!--a href="predictions.html">Predictions</a-->
+            <a href="gallery.html" style="font-family: sans-serif;">Gallery</a>
+            <a href="blog.html" style="font-family: sans-serif;">Blog</a>
+            <a href="contact.html" style="font-family: sans-serif;">Contact Us</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+        <!-- / header -->
+        <!-- content -->
+        <!-- Confirmation Section -->
+        <section>
+            <div><i class="fa fa-check-circle" aria-hidden="true"></i></div>
+            <div id="success-title">Order Placed Successfully</div>
+            <div id="success-msg">We have sent you an email with the order details</div>
+        </section>
+               
+</body>
+
+</html>

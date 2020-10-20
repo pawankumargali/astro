@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ydikam</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="css/reset.css" type="text/css" media="all">
+        <link rel="stylesheet" href="css/layout.css" type="text/css" media="all">
+        <link rel="stylesheet" href="css/style.css" type="text/css" media="all">
+        <link rel="stylesheet" href="css/zerogrid.css" type="text/css" media="all">
+        <link rel="stylesheet" href="css/responsive.css" type="text/css" media="all">
+        <link rel="stylesheet" href="css/responsiveslides.css" />
+        <link rel="stylesheet" href="css/contactform.css" type="text/css" media="all">
+        <link rel="stylesheet" href="css/checkout.css" type="text/css" media="all">
+        <script type="text/javascript" src="js/jquery-1.6.js"></script>
+        <script type="text/javascript" src="js/cufon-yui.js"></script>
+        <script type="text/javascript" src="js/cufon-replace.js"></script>
+        <script type="text/javascript" src="js/Forum_400.font.js"></script>
+        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+        <script type="text/javascript" src="js/tms-0.3.js"></script>
+        <script type="text/javascript" src="js/tms_presets.js"></script>
+        <script type="text/javascript" src="js/script.js"></script>
+        <script type="text/javascript" src="js/atooltip.jquery.js"></script>
+        <script type="text/javascript" src="js/css3-mediaqueries.js"></script>
+        <script src="js/responsiveslides.js"></script>
+        <script type="text/javascript" src="js/responsive-appointment-btn.js"></script>
+        <style type="text/css">
+            textarea {
+                height: 50px;
+            }
+        </style>
+        <script>
+            function myFunction() {
+                var x = document.getElementById("myTopnav");
+                if (x.className === "topnav") {
+                    x.className += " responsive";
+                } else {
+                    x.className = "topnav";
+                }
+            }
+        </script>
+    
+    </head>
+    <body>
+        <!-- Header -->
+        <div class="topnav" id="myTopnav">
+            <a href="index.html" class="active" style="font-family: sans-serif;">Home</a>
+            <a href="about.html" style="font-family: sans-serif;">About Us</a>
+            <div class="dropdown">
+                <button class="dropbtn">Services
+</button>
+                <div class="dropdown-content">
+                    <a href="astrology-services.html" style="font-family: sans-serif;">Astrology Services</a>
+                    <a href="vasthu.html" style="font-family: sans-serif;">Vaastu Services</a>
+                    <a href="priest-services.html" style="font-family: sans-serif;">Priest Services</a>
+                    <a href="priest-services.html" style="font-family: sans-serif;">Virtual Services</a>
+                    <a href="muhurtha.html" style="font-family: sans-serif;">Muhurtha Services</a>
+                </div>
+            </div>
+            <!--a href="Services.html">Services</a-->
+            <div class="dropdown">
+                <button class="dropbtn">Classes
+</button>
+                <div class="dropdown-content">
+                    <a href="vedic_classes.html" style="font-family: sans-serif;">Vedic Classes</a>
+                    <a href="astrology_classes.html" style="font-family: sans-serif;">Astrology Classes</a>
+                    <a href="vasthuclasses.html" style="font-family: sans-serif;">Vaastu Classes</a>
+                    <!--a href="#">Virtual Services</a-->
+                    <a href="muhurthaclasses.html" style="font-family: sans-serif;">Muhurtha Classes</a>
+                </div>
+            </div>
+            <!--a href="predictions.html">Predictions</a-->
+            <a href="gallery.html" style="font-family: sans-serif;">Gallery</a>
+            <a href="blog.html" style="font-family: sans-serif;">Blog</a>
+            <a href="contact.html" style="font-family: sans-serif;">Contact Us</a>
+            <a href="javascript:void(0);" style="font-size:15px;" class="icon" onclick="myFunction()">&#9776;</a>
+        </div>
+
+
+        <!-- Checkout Section -->
+        <section>
+            <h4>Checkout</h4>
+            <div id="checkout-info">
+
+                <div id="checkout-items"></div>
+
+                <div id="order-card">
+                    <h4 id="amt-title">Total Amount</h4>
+                    <p>Amount: Rs
+                        <span id="total-amt"></span>
+                    </p>
+                    <button id="place-order-btn"></button>
+                        
+                        
+
+                    <div id="error-div">Error occured in placing order. Try again</div>
+                </div>
+            </div>
+        </section>
+        
+        <!-- Footer -->
+        <footer></footer>
+        
+        <!-- External script -->
+        <script src="./js/checkout.js"></script>
+
+    </body>
+</html>

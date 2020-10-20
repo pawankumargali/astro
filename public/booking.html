@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Ydikam</title>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+        <link rel="stylesheet" href="css/booking.css" type="text/css" media="all">
+        <script type="text/javascript" src="js/jquery-1.6.js"></script>
+        <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+    </head>
+    <body>
+<!-- Redirection Counter -->
+<script type="text/javascript">
+    var count = 100; // Timer
+    function countDown() {
+      var timer = document.getElementById("timer"); // Timer ID
+      if (count > 0) {
+        count--;
+        timer.innerHTML = "This page will redirect in " + count + " seconds."; // Timer Message
+        setTimeout("countDown()", 1000);
+      } else {
+        window.location.replace("./confirmation.html");
+      }
+    }
+  </script>
+  
+  <div id="master-wrap">
+    <div id="logo-box">
+  
+      <div class="animated fast fadeInUp">
+        <div class="icon"></div>
+        <h1>Thank you</h1>
+      </div>
+  
+      <div class="notice animated fadeInUp">
+        <p class="lead">Payment has been successfully completed. Please wait while we confirm your booking!</p>
+        <a class="btn animation" href="./index.html">Go to Home</a>
+      </div>
+  
+      <div class="footer animated slow fadeInUp">
+        <p id="timer">
+          <script type="text/javascript">
+            countDown();
+          </script>
+        </p>
+      </div>
+  
+    </div>
+    <!-- /#logo-box -->
+  </div>
+  <!-- /#master-wrap -->
+  <script src="./js/booking.js"></script>
+  </body>
+  </html>
